@@ -1,0 +1,39 @@
+React is declartive, effiecent and flexible js libary.
+
+	Declarative :you decalre some thing, it render based ypur place holder and decalrations
+	effiecent :  as changes are in individual virtual dom and later reflect to actual dom
+	flexible :slowly react has moved from php to jsx with minor dom element changes
+
+It is an open-source, component-based front end library . Architecture of React is Redux or Flux.
+
+React is small units of reusable components , components can be nested and made has higer level component
+ 
+We do not write code into dom object , first we write code in virtual DOM and then we transfer that dom to actual dom
+
+Pre-requisite 
+	NodeJS and NPM :node -v and npm -v
+	React and React DOM =>npm i react react-dom --save
+	Webpack=>complie all js as one unit,used for module packaging, development, and production pipeline automation. 
+			webpack-dev-server=> development
+			webpack =>production build
+			webpack CLI => set of commands
+    Babel=>compiler and transpiler
+			babel-loader =>used for JSX file types
+			babel-preset-react => browser update automatically changes to dom
+			babel-preset-env => es6 needs it 
+
+
+two ways to create react application
+	1)Using the npm command => mkdir reactApp
+		 =>npm init -y 
+		 =>npm i react react-dom --save
+		 =>npm install webpack webpack-dev-server webpack-cli --save
+		 =>npm install babel-core babel-loader babel-preset-env babel-preset-react babel-webpack-plugin --save-dev
+		 =>npm i --save-dev html-webpack-plugin
+		 =>create index.html  App.js main.js webpack.config.js  .babelrc 
+		 
+    2)Using the create-react-app command=> npx create-react-app jtp-reactapp  (or)
+	 npm install -g create-react-app  =>create-react-app jtp-reactapp  
+
+
+
