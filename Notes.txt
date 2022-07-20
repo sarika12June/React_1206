@@ -42,7 +42,12 @@ Features:
 			Virtual DOM :it works with one-way data binding and any change in application render VDOM and then transfer to actual DOM and  changes only that DOM node
 			Simplicity :ReactJS uses JSX file which is easy to understand and reusable  
 			Performance :it is fast due to  virtual DOM
-
+Advantage :
+				Easy to learn and use
+				create Dynamic Web application
+				reusable components
+				performance enhancments
+				The support of handy notes 
 
 
 
