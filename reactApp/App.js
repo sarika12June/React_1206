@@ -9,7 +9,8 @@ class App extends Component{
       }  
       return(  
          <div>  
-            <h1 style = {myStyle}>www.javatpoint.com</h1>  
+            <h1 className={myStyle}>JavaTpoint</h1>  
+            <h1 style = {myStyle}>www.javatpoint.com</h1> 
             <p data-demoAttribute = "demo">This website contains the best CS tutorials.</p>  
          </div>  
       );  

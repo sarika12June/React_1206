@@ -1,0 +1,62 @@
+create the folder with dist and src 
+create index.html and index.js
+run the app with live server
+-------------------------
+create package.json npm init -y
+change script obj in package json with build :'webpack --mode production'
+run npm run build .it will create mani.js file in dist .point index.html to main.js now
+-------------------------
+create web pack config file 
+
+const path =require('path')
+module.exports={
+    mode: 'development',
+    entry: {
+        bundle: path.resolve(__dirname,'src/index.js'),
+    },
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename:'[name].js'
+    }
+}
+
+--------------------------------------------------
+add  loader with rules key in web pack config file
+
+  ,
+    module: {
+       rules: [
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+           {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+        ],
+    },
+--------------------------------------------------
+
+add plugin like below
+
+     plugins: [
+            new HtmlWebpackPlugin({
+            title: 'Webpack App',
+            filename: 'index.html',
+            template: 'src/template.html',
+            })
+  ],
+
+which used open html directly by delete index.html file from dist
+--------------------------------------------------
